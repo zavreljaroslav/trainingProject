@@ -8,9 +8,9 @@ public class AgeMinigameService {
 
     public void playGame(Person person) {
         Scanner str = new Scanner(System.in);
-        Integer response;
+        int response;
         do {
-            System.out.println("How old is " + person.getName());
+            System.out.println("How old is " + person.getName() + "?");
             String input = str.nextLine();
 
             response = stringToInteger(input);
@@ -19,13 +19,13 @@ public class AgeMinigameService {
             } else if (response < person.getAge()) {
                 System.out.println(person.getName() + " is older than that, cmon...Try again!");
             } else {
-                System.out.println(person.getName() + "is younger than that, cmon...Try again!");
+                System.out.println(person.getName() + " is younger than that, cmon...Try again!");
             }
         } while (!(response == person.getAge()));
     }
 
     public int stringToInteger(String string) {
-        Integer result = Integer.parseInt(string);
+        int result = Integer.parseInt(string);
         return result;
     }
 }
