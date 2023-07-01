@@ -7,12 +7,12 @@ public class Main {
         Scanner str = new Scanner(System.in);
         String response;
         do{
-            System.out.println("Kolik je Kaibovi?");
+            System.out.println("How old is Jimmi");
             response = str.nextLine();
             if (response.equals("15")) {
-                System.out.println("Spravna odpoved");
+                System.out.println("Correct!");
             } else {
-                System.out.println("Tolik neni Kaibovi!");
+                System.out.println("Wrong..Try again!");
             }
         } while (!response.equals("15"));
     }
