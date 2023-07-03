@@ -9,7 +9,7 @@ public class Main {
         Toob.setAge (29);
         Toob.setName("Toob");
 
-        //String userName = "Alex";
+        //String userName = "Jimmi";
         //byte userAge = 25;
         AgeMinigameService.playGame(Toob.getAge(), Toob.getName());
             }
