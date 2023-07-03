@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class AgeMinigameService {
     //public static void playGame(String[] args) {
-    public static void playGame() {
+    public static void playGame(byte userAge, String userName) {
         // while (!userGuess.equals("quit"))
-        byte jimmiAge = 25;
+        //byte jimmiAge = 25;
         Scanner inputScanner = new Scanner(System.in);
-        System.out.print("How old is Jimmi? ");
+        System.out.print("How old is " + userName + "?");
 
         //System.out.print("How old is Jimmi? ");
         //byte userGuess = inputScanner.nextByte();
@@ -18,12 +18,12 @@ public class AgeMinigameService {
         while (true) {
 
             byte userGuess = inputScanner.nextByte();
-            if (userGuess > jimmiAge)
-                System.out.println("Nope, Jimmi is younger than " + userGuess + "! Guess again!");
-            else if (userGuess < jimmiAge)
-                System.out.println("Nope, Jimmi is older than " + userGuess + "! Guess again!");
+            if (userGuess > userAge)
+                System.out.println("Nope, " + userName + " is younger than " + userGuess + "! Guess again!");
+            else if (userGuess < userAge)
+                System.out.println("Nope, " + userName + " is older than " + userGuess + "! Guess again!");
             else {
-                System.out.println("Correct! Jimmi is " + userGuess + " years old!");
+                System.out.println("Correct! " + userName +  " is " + userGuess + " years old!");
                 break;
             }
         }
