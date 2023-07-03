@@ -2,9 +2,9 @@ package org.example.models;
 
 public class Person {
     private String name;
-    private byte age;
+    private int age;
     //constructor
-    public Person (byte age, String name){
+    public Person (){
         this.name = "";
         this.age = 0;
     }
@@ -15,7 +15,7 @@ public class Person {
         return name;
     }
 
-    public byte getAge(){
+    public int getAge(){
         return age;
     }
 
@@ -24,7 +24,7 @@ public class Person {
         this.name = newName;
     }
 
-    public void setAge(byte newAge){
+    public void setAge(int newAge){
         this.age = newAge;
     }
 

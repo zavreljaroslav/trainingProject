@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class AgeMinigameService {
     //public static void playGame(String[] args) {
-    public static void playGame(byte userAge, String userName) {
+    public static void playGame(int userAge, String userName) {
         // while (!userGuess.equals("quit"))
         //byte jimmiAge = 25;
         Scanner inputScanner = new Scanner(System.in);
-        System.out.print("How old is " + userName + "?");
+        System.out.print("How old is " + userName + "? ");
 
         //System.out.print("How old is Jimmi? ");
         //byte userGuess = inputScanner.nextByte();

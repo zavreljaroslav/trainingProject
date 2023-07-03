@@ -1,11 +1,16 @@
 package org.example;
 
 import org.example.service.AgeMinigameService;
+import org.example.models.Person;
 
 public class Main {
     public static void main(String[] args) {
-        String userName = "Alex";
-        byte userAge = 25;
-        AgeMinigameService.playGame(userAge, userName);
+        Person Toob = new Person();
+        Toob.setAge (29);
+        Toob.setName("Toob");
+
+        //String userName = "Alex";
+        //byte userAge = 25;
+        AgeMinigameService.playGame(Toob.getAge(), Toob.getName());
             }
         }
